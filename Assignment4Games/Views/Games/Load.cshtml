@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<link href="~/css/site.css" rel="stylesheet" />
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Make Payment</title>
+</head>
+<body>
+    <p >
+        <h1 id="title">Make Payment</h1>
+        <div id="h2">
+   
+    @if (Model.Pass == 1)
+    {
+        @:Your amount to be paid for TTC monthly pass is <strong>116.75</strong>
+
+
+    }
+
+    @if (Model.Pass == 2)
+    {
+        @:Your amount to be paid for Brampton Transit pass is <strong>100.55</strong>
+    }
+
+
+
+
+    @if (Model.Pass == 3)
+    {
+        @:Your amount to be paid for Burlington Transit monthly pass is <strong>55.55</strong>
+    }
+
+    @if (Model.Pass == 4)
+    {
+        @:Your amount to be paid for MiWay Transit monthly pass is <strong>125.16</strong>
+    }
+    </div>
+
+    </p>
+    <p id="h2">
+        @if (Model.Amount > 0)
+        {
+            @:Amount to be paid for fund is <strong>@Model.Amount</strong>
+
+
+        }
+    </p>
+    <br />
+    <button id="h4" class="btn-link"><p><a asp-action="PayForm">Click here to Pay</a></p></button>
+
+
+</body>
+</html>

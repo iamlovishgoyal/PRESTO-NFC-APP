@@ -1,0 +1,115 @@
+﻿@model Assignment4Games.Models.Payment
+@{
+    ViewData["Title"] = "Make Payment";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <br />
+    <br />
+    <title> Fill the fields</title>
+</head>
+<body>
+    <div id="form">
+        <form asp-action="AddPayment">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pass" class="control-label"></label>
+                <input asp-for="Pass" class="form-control" />
+                <span asp-validation-for="Pass" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="mobile" class="control-label"></label>
+                <input asp-for="mobile" class="form-control" />
+                <span asp-validation-for="mobile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Card" class="control-label"></label>
+                <input asp-for="Card" class="form-control" />
+                <span asp-validation-for="Card" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CVV" class="control-label"></label>
+                <input asp-for="CVV" class="form-control" />
+                <span asp-validation-for="CVV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <select asp-for="Date" class="form-control"></select>
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="age" class="control-label"></label>
+                <input asp-for="age" class="form-control" />
+                <span asp-validation-for="age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input id="button" type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+
+        @*<form asp-action="PayForm">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+
+                    <label asp-for="name">Name:</label>
+                    <input asp-for="name" />
+                    <span asp-validation-for="name" class="text-danger"></span>
+                </div>
+                <p>
+
+                    <label asp-for="@Model.email"></label>
+                    <input asp-for="@Model.email" />
+
+                    <span asp-validation-for="@Model.email" class="text-danger"></span>
+                </p>
+
+                <p>
+
+                    <label asp-for="mobile">Mobile:</label>
+                    <input asp-for="mobile" />
+                </p>
+
+                <p>
+                    <label asp-for="Card">Credit/Debit Card Number:</label>
+                    <input asp-for="Card" />
+                </p>
+                <p>
+                    <label asp-for="CVV">CVV Number from the backside of your Card:</label>
+                    <input asp-for="CVV" />
+                </p>
+                <a href="~/Views/Games/PayForm.cshtml">~/Views/Games/PayForm.cshtml</a>
+                <p>
+                    <label asp-for="Date">Expiry date:</label>
+                    <input asp-for="Date" />
+                </p>
+                <p>
+
+                    <label asp-for="age">Age:</label>
+                    <input asp-for="age" />
+                </p>
+
+                <input type="submit" value="Create" class="btn btn-default" />
+            </form>*@
+    </div>
+</body>
+</html>

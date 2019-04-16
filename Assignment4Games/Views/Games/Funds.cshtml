@@ -1,0 +1,44 @@
+﻿@model Assignment4Games.Models.LoadFunds
+@{
+    ViewData["Title"] = "Add Funds";
+}
+<link href="~/css/site.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Load Funds</title>
+    <div>
+        <h4 id="h4">Load My Card</h4>
+    </div>
+    <div>
+        <p id="form">
+            Funds will be ready to use in 4 to 24 hours.<br />
+            If you are loading a pass for next month, it will be ready to use on the 1st of the month. If you are loading a pass for the current month, it will be ready to use in 4 to 24 hours.
+        </p>
+    </div>
+</head>
+<body>
+    <form asp-action="Funds" method="post">
+        <p id="form">
+
+            <label asp-for="Amount">Add Amount:</label>
+            <input asp-for="Amount" />
+        </p>
+
+        <p id="form">
+            <label>Add Transit Passes</label>
+            <select asp-for="Pass">
+                <option value="">Select Transit Agency Pass</option>
+                <option value="1">Toronto Transit Commision</option>
+                <option value="2">Brampton Transit</option>
+                <option value="3">Burlington Transit</option>
+                <option value="4">MiWay</option>
+            </select>
+        </p>
+        <button id="button" type="submit">ADD</button>
+    </form>
+</body>
+</html>

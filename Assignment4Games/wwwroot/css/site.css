@@ -1,0 +1,112 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+#form {
+    background-image: url('../images/contact.jpg');
+    color: brown;
+    background-color: aqua;
+    font-size: x-large;
+}
+#button {
+    background-color: darkgreen;
+    color: white;
+    font-size: x-large;
+  border-bottom-style:dotted;
+    font-family: Verdana;
+    font-display: swap;
+    border-collapse:collapse;
+}
+#h4 {
+    background-color: darkgreen;
+    color: white;
+    font-size: x-large;
+    font-family: Arial;
+}
+#h2 {
+    background-color: darkgreen;
+    color: white;
+    font-size: x-large;
+    font-family: Arial;
+}
+#h3 {
+    background-color:brown;
+    color: white;
+    font-size: x-large;
+    font-family: Arial;
+}
+#dt{
+   border:groove;
+    color:gold;
+    background-color:darkcyan;
+    font-size:x-large;
+}
+#dr {
+    background-image: url('../images/contact.jpg');
+    color: brown;
+    background-color: aqua;
+    font-size:larger;
+    border: groove;
+}
+#new {
+    
+    color:darkgreen;
+    font-weight:500;
+    font-size:large;
+    font-family: Arial;
+}
+#btn {
+    background-color: darkgreen;
+    color: white;
+    font-size: x-large;
+    border-color: darkred;
+    font-family: Verdana;
+    font-display: swap;
+}
+#title{
+    font-family:Arial;
+    color:brown;
+    font-size:x-large;
+    font-weight:800;
+    background-color:cadetblue;
+}
+#final {
+    background-image: url('../images/1.jpg');
+    border-image-repeat: inherit;
+    color: brown;
+    background-color: aqua;
+    font-size:small;
+}

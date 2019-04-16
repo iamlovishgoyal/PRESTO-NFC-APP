@@ -1,0 +1,48 @@
+﻿@model Assignment4Games.Models.Payment
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+</head>
+<body>
+    <p>
+        <h1 class="text-center">Thank you for the payment</h1>
+        @if (Model.Pass == 1)
+        {
+            @:<strong>Thank you for your payment of TTC Monthly Pass, you will be notified via your email once your activation has been done</strong>
+
+        }
+
+        @if (Model.Pass == 2)
+        {
+            @:<strong>Thank you for your payment of Brampton Transit Pass, you will be notified via your email once your activation has been done</strong>
+        }
+
+
+
+
+        @if (Model.Pass == 3)
+        {
+            @:<strong>Thank you for your payment of Burlinton Transit Pass, you will be notified via your email once your activation has been done</strong>
+        }
+
+        @if (Model.Pass == 4)
+        {
+            @:<strong>Thank you for your payment of MiWay Transit Pass, you will be notified via your email once your activation has been done</strong>>
+        }
+        </div>
+
+    </p>
+    <p id="h2">
+        @if (Model.Amount > 0)
+        {
+            @:<p class="text-center"><strong>Thanks for your paymeny of $@Model.Amount, you will be notified via your email once your activation has been done.</strong></p>
+
+        }
+    </p>
+    </p>
+    <p class="text-center" id="h2">Click <a asp-controller="Reviews" asp-action="Create">here</a> to share your experience with Presto.</p>
+</body>
+</html>

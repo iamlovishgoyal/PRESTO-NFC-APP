@@ -1,0 +1,48 @@
+﻿@model Assignment4Games.Models.Payment
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <h2 id="h3">Registration for Insurance Policy</h2>
+    <div>
+        <p id="h2">
+            Funds will be ready to use in 4 to 24 hours.<br />
+            If you are loading a pass for next month, it will be ready to use on the 1st of the month. If you are loading a pass for the current month, it will be ready to use in 4 to 24 hours.
+        </p>
+    </div>
+</head>
+<body>
+    <form asp-action="RegInsure" method="post" id="form">
+        <p>
+            <label asp-for="name">Please enter your First Name linked with your Presto Number:</label>
+            <input asp-for="name" />
+        </p>
+        <p>
+
+            <label asp-for="email">Email linked to your Presto  Number:</label>
+            <input asp-for="email" />
+        </p>
+
+        <p>
+
+            <label asp-for="mobile">Enter your Mobile Number:</label>
+            <input asp-for="mobile" />
+        </p>
+
+        <p>
+            <label asp-for="Card">Credit/Debit Card Number:</label>
+            <input asp-for="Card" />
+        </p>       
+        <p>
+
+            <label asp-for="age">Age:</label>
+            <input asp-for="age" />
+        </p>
+
+        <button id="button" type="submit">Register</button>
+    </form>
+</body>
+</html>
+
+

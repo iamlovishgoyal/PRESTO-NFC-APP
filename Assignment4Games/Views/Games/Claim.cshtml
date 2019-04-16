@@ -1,0 +1,47 @@
+﻿@model Assignment4Games.Models.Payment
+@{
+    ViewData["Title"] = "Claim Your Lost Presto ";
+}
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="~/jquery/jquery.js"></script>
+<script src="~/jquery-validate/jquery.validate.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Claim Your Lost Presto</title>
+    <div>
+        <h4 id="h4">Claim your Lost Presto Card </h4>
+    </div>
+   
+</head>
+<body>
+    <form asp-action="Claim" method="post" id="form">
+        <p>
+
+            <label asp-for="name">Name:</label>
+            <input asp-for="name" />
+        </p>
+        <p>
+
+            <label asp-for="email">Email:</label>
+            <input asp-for="email" />
+        </p>
+
+        <p>
+
+            <label asp-for="mobile">Mobile:</label>
+            <input asp-for="mobile" />
+        </p>
+
+       <p>
+           <label asp-for="prestono">Your Presto Number(Optional)</label>
+           <input asp-for="prestono"/>
+       </p>
+        <button id="button" type="submit">CLAIM NOW</button>
+    </form>
+</body>
+</html>
